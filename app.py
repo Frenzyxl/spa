@@ -10,7 +10,7 @@ def hello_world():  # put application's code here
 
 @app.route('/test')
 def testt():
-    return 'works'
+    return 'Kapaichumarimarichupako'
 
 
 if __name__ == '__main__':
