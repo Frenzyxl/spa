@@ -9,5 +9,11 @@ pipeline {
                 '''
             }
         }
+        stage ('start container') {
+            steps {
+                sh 'docker compose up -d --wait'
+                sh 'docker ps'
+            }
+        }
     }
 }
