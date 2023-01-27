@@ -4,10 +4,8 @@ pipeline {
         stage ('verify tooling') {
             steps {
                 sh '''
+                    python3 --version
                     curl --version
-                    docker version
-                    docker compose version
-                    
                 '''
             }
         }
